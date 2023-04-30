@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="./resume.css" />
+  </head>
+  <body>
+    <section class="header">
+      <button class="back-btn">Back</button>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Search for keywords to filter the resumes"
+      />
+      <button class="next-btn">Next</button>
+    </section>
+    <section class="box" id="box">
+      <section class="resume-box" id="resume-box">
+        <section class="resume-header">
+          <div class="container">
+            <div class="name" id="name">John Doe</div>
+            <div class="post-name">
+              Applied For:
+              <span class="AppliedFor">Software Engineer</span>
+            </div>
+          </div>
+          <aside class="icon-aside">
+            <img src="/assets/user.jpg" />
+          </aside>
+        </section>
+        <section class="resume-body">
+          <div class="aside-container">
+            <aside>
+              <div class="personal-info">
+                <div class="info-title">Personal Information</div>
+                <ul>
+                  <li class="phone">9999999999</li>
+                  <li class="email">abc@abc.com</li>
+                  <li><a href="" class="network">abcd</a></li>
+                </ul>
+              </div>
+              <div class="technical-skills">
+                <div class="skills-title">Technical Skills</div>
+                <ul class="skills"></ul>
+              </div>
+              <div class="hobbies-list">
+                <div class="hobbies-title">Hobbies</div>
+                <ul class="hobbies"></ul>
+              </div>
+            </aside>
+          </div>
+          <div class="detailed-resume-container">
+            <!-- work experience container div -->
+            <div class="heading">
+              <span class="title">Work Experience in previous company</span>
+              <div class="sub-title">
+                Company name:
+                <span class="information-span work-company">ABCD</span>
+              </div>
+              <div class="sub-title">
+                Position:
+                <span class="information-span work-position">ABCD</span>
+              </div>
+              <div class="sub-title">
+                Start Date:
+                <span class="information-span work-start">01-01-2022</span>
+              </div>
+              <div class="sub-title">
+                End Date:
+                <span class="information-span work-end">01-01-2023</span>
+              </div>
+              <div class="sub-title">
+                Summary:
+                <span class="information-span work-summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  sed ipsum quis mauris gravida placerat. Integer consectetur,
+                  felis at blandit tincidunt, metus ex blandit nibh, non
+                  ultrices arcu eros non urna. Sed sit amet ante vel orci
+                  ultricies tempor. Fusce ut diam diam. Sed interdum euismod
+                  orci, quis accumsan odio feugiat vel. Ut sollicitudin congue
+                  felis. Maecenas sagittis sapien sed odio vehicula tincidunt.
+                </span>
+              </div>
+            </div>
+            <!-- projects info div -->
+
+            <div class="heading">
+              <span class="title">Projects</span>
+              <div class="sub-title project-name">Project name</div>
+            </div>
+            <!-- Education div -->
+            <div class="heading">
+              <span class="title">Education</span>
+              <ul class="education">
+                <!-- Dynamically add the education details as li -->
+              </ul>
+            </div>
+            <!-- Internship div -->
+            <div class="heading">
+              <span class="title">Internship</span>
+              <ul>
+                <li class="sub-title">
+                  Company name:
+                  <span class="information-span internship-company">ABCD</span>
+                </li>
+                <li class="sub-title">
+                  Position:
+                  <span class="information-span internship-position">ABCD</span>
+                </li>
+                <li class="sub-title">
+                  Start Date:
+                  <span class="information-span internship-start">ABCD</span>
+                </li>
+                <li class="sub-title">
+                  End Date:
+                  <span class="information-span internship-end">ABCD</span>
+                </li>
+                <li class="sub-title">
+                  Summary:
+                  <span class="information-span internship-summary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sed ipsum quis mauris gravida placerat. Integer consectetur,
+                    felis at blandit tincidunt, metus ex blandit nibh, non
+                    ultrices arcu eros non urna. Sed sit amet ante vel orci
+                    ultricies tempor. Fusce ut diam diam. Sed interdum euismod
+                    orci, quis accumsan odio feugiat vel. Ut sollicitudin congue
+                    felis. Maecenas sagittis sapien sed odio vehicula tincidunt.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Achivements -->
+            <div class="heading">
+              <span class="title">Achivements</span>
+              <ul class="achivements">
+                <!-- Dynamically add Achivements as li -->
+              </ul>
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+      </section>
+      <section id="error-container" class="error-container">
+        <img src="assets\sad_icon.jpg" alt="sad_icon" />
+        <div class="error-message">
+          Invalid search or No applications for this job.
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="./resume.js"></script>
+</html>
